@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .example {
+    @apply flex items-center justify-center w-[350px] h-1/2 bg-primiry text-white rounded-2xl text-5xl font-medium  cursor-pointer shadow-md hover:bg-yellow-200 hover:rounded-3xl transition-all duration-500;
+  }
+}

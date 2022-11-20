@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Example from './components/example.jsx'
+import Example from './components/example'
+import CodeEditorWindow from './components/codeEditorWindow'
 
 function App() {
   return (
     <div className='flex justify-center items-center w-screen	h-screen p-0'>
       <Example />
+      <CodeEditorWindow />
     </div>
   )
 }

@@ -1,14 +1,15 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Editor from '@monaco-editor/react'
+import { noop } from 'lodash'
 
-interface CodeEditorWindowProps {
-  onChange: (data: string | undefined) => void
-  language: string
-  code: string
-  theme: string
+interface Props {
+  language?: string
+  code?: string
+  theme?: string
+  onChange?: (data: string | undefined) => void
 }
 
-const CodeEditorWindow = ({ onChange, language, code, theme }: CodeEditorWindowProps) => {
+const CodeEditorWindow: React.FC<Props> = ({ language, code, theme, onChange = noop }) => {
   const [value, setValue] = useState<string | undefined>(code || '')
 
   const handleEditorChange = (value: string | undefined) => {

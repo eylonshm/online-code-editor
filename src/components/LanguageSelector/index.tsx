@@ -5,7 +5,7 @@ import { dropDownStyles } from '../../constants'
 import { noop } from 'lodash'
 
 interface Props {
-  onSelectChange: () => void
+  onSelectChange: (selectedLanguage: { value: string }) => void
 }
 
 const LanguageSelector: React.FC<Props> = ({ onSelectChange = noop }) => (

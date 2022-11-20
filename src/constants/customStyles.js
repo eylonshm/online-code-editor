@@ -1,4 +1,4 @@
-export default dropDownStyles = {
+export const dropDownStyles = {
   control: (styles) => ({
     ...styles,
     width: '100%',

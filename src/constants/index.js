@@ -1,2 +1,2 @@
-export { default as languageOptions } from './languages'
-export { default as dropDownStyles } from './customStyles'
+export { languageOptions } from './languages.js'
+export { dropDownStyles } from './customStyles'

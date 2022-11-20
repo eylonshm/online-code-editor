@@ -6,7 +6,7 @@ interface Props {
   language?: string
   code?: string
   theme?: string
-  onChange?: (data: string | undefined) => void
+  onChange: (data: string | undefined) => void
 }
 
 const CodeEditorWindow: React.FC<Props> = ({ language, code, theme, onChange = noop }) => {

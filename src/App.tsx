@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Example from './components/example'
-import CodeEditorWindow from './components/codeEditorWindow'
+import CodeEditorWindow from './components/CodeEditorWindow'
 
 function App() {
   return (
